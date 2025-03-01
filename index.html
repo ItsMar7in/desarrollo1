@@ -3,104 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft - El Mundo de los Bloques</title>
+    <title>Tarjetas Minecraft</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Minecraft News</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Guías</a></li>
+            <li><a href="#">Mods</a></li>
+            <li><a href="#">Eventos</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <!-- ENCABEZADO PRINCIPAL -->
-    <header>
-        <h1>Bienvenido al Mundo de Minecraft</h1>
-    </header>
+<div class="container">
+    <div class="card">
+        <img src="img/actualizacion.jpg" alt="Actualización 1.20">
+        <h3>Actualización 1.20</h3>
+        <p>La nueva actualización de Minecraft trae muchas novedades en jugabilidad y gráficos.</p>
+        <a href="https://www.minecraft.net/es-es/article/trails-and-tales-update-out-now" target="_blank">Detalles</a>
+    </div>
+    <div class="card">
+        <img src="img/events.webp" alt="Eventos de Minecraft">
+        <h3>Eventos de Minecraft</h3>
+        <p>Participa en los festivales y eventos especiales organizados por Mojang.</p>
+        <a href="https://www.minecraft.net/es-es/article/minecraft-festival" target="_blank">Detalles</a>
+    </div>
+    <div class="card">
+        <img src="img/guiacontruccion.jpg" alt="Guía de Construcción">
+        <h3>Guía de Construcción</h3>
+        <p>Aprende a construir edificaciones impresionantes con esta guía visual.</p>
+        <a href="https://paso-a-paso.es/construcciones-minecraft-paso-a-paso/" target="_blank">Detalles</a>
+    </div>
+    <div class="card">
+        <img src="img/guiaredstone.webp" alt="Guía de Redstone">
+        <h3>Guía de Redstone</h3>
+        <p>Domina la redstone para crear mecanismos avanzados en Minecraft.</p>
+        <a href="https://www.korosenai.es/videojuegos-indie/minecraft/guia-redstone/" target="_blank">Detalles</a>
+    </div>
+    <div class="card">
+        <img src="img/modsgraficos.jpg" alt="Mods Gráficos">
+        <h3>Mods Gráficos</h3>
+        <p>Mejora la apariencia visual de tu mundo con los mejores shaders.</p>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/optifine" target="_blank">Detalles</a>
+    </div>
+    <div class="card">
+        <img src="img/modsupervivencia.jpg" alt="Mods de Supervivencia">
+        <h3>Mods de Supervivencia</h3>
+        <p>Añade nuevos desafíos y criaturas para una experiencia de supervivencia más intensa.</p>
+        <a href="https://www.curseforge.com/minecraft/mc-mods/better-survival-mod" target="_blank">Detalles</a>
+    </div>
+</div>
 
-    <main>
-
-        <!-- SECCIÓN DE INTRODUCCIÓN -->
-        <section>
-            <h2>¿Qué es Minecraft?</h2>
-            <p>Minecraft es un videojuego de construcción y aventura donde los jugadores pueden explorar un mundo infinito hecho de bloques.</p>
-            <img src="img/images.png" alt="Imagen de Minecraft" width="200">
-        </section>
-
-        <!-- SECCIÓN DE TEXTO Y PÁRRAFOS EN TEMÁTICA DE MINECRAFT -->
-        <section>
-            <h1>El Lenguaje de los Bloques</h1>
-            <p>En el mundo de Minecraft, cada bloque cuenta una historia. Desde la piedra básica hasta el diamante más raro.</p>
-            <ol>
-                <li><b>Pico de Diamante</b> - Herramienta esencial para minar recursos valiosos.</li>
-                <li><i>Espada Encantada</i> - Perfecta para combatir mobs peligrosos.</li>
-                <li><u>Mapa del Tesoro</u> - Guía para encontrar lugares secretos y recompensas.</li>
-            </ol>
-            <ul>
-                <li>Antorcha de Redstone - Útil para circuitos avanzados.</li>
-                <li>Manzana Dorada - Un recurso valioso para la regeneración de vida.</li>
-                <li>Bloque de Esmeralda - Indispensable para el comercio con aldeanos.</li>
-            </ul>
-            <ol>
-                <li><del>Casco de Cuero</del> - Equipo inicial menos resistente.</li>
-                <li><ins>Armadura de Netherite</ins> - La mejor protección en el juego.</li>
-            </ol>
-            <ol>
-                <li><sup>Altura de Construcción</sup> - Importante para estructuras altas.</li>
-                <li><sub>Profundidad de Minería</sub> - Clave para encontrar minerales raros.</li>
-            </ol>
-            <ol>
-                <li><code>/gamemode creative</code> - Comando para acceder a recursos ilimitados.</li>
-                <li><abbr title="Creeper, Enderman, Esqueleto">Mobs</abbr> - Criaturas que habitan el mundo de Minecraft.</li>
-            </ol>
-            <blockquote>"Nunca caves directamente hacia abajo" - Sabiduría de Minecraft.</blockquote>
-        </section>
-
-        <!-- SECCIÓN DE FORMULARIO DE COMENTARIOS -->
-        <section>
-            <h2>Comparte tu experiencia</h2>
-            <form>
-                <label for="nombre">Nombre de Jugador:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Steve o Alex"><br><br>
-
-                <label for="email">Correo:</label>
-                <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com"><br><br>
-
-                <label for="mundo">Modo de Juego Favorito:</label>
-                <select id="mundo" name="mundo">
-                    <option value="supervivencia">Supervivencia</option>
-                    <option value="creativo">Creativo</option>
-                    <option value="hardcore">Hardcore</option>
-                    <option value="aventura">Aventura</option>
-                </select><br><br>
-
-                <label for="bloque">Bloque Favorito:</label>
-                <input type="text" id="bloque" name="bloque" placeholder="Diamante, Netherite, etc."><br><br>
-
-                <label for="comentario">Tu mejor aventura en Minecraft:</label><br>
-                <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Cuenta tu historia..."></textarea><br><br>
-
-                <fieldset>
-                    <legend>Preferencias en el Juego:</legend>
-                    <input type="checkbox" id="explorar" name="preferencias" value="explorar">
-                    <label for="explorar">Explorar el mundo</label><br>
-                    <input type="checkbox" id="construir" name="preferencias" value="construir">
-                    <label for="construir">Construir estructuras</label><br>
-                    <input type="checkbox" id="combate" name="preferencias" value="combate">
-                    <label for="combate">Combatir mobs</label><br>
-                </fieldset><br>
-
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
-
-        <!-- SECCIÓN DE ENLACE -->
-        <section>
-            <h2>Enlace a la Página Oficial</h2>
-            <p>Visita la página oficial de <a href="https://www.minecraft.net" target="_blank">Minecraft</a> para más información.</p>
-        </section>
-
-    </main>
-
-    <!-- PIE DE PÁGINA -->
-    <footer>
-        <p>&copy; 2025 - Página creada por un fan de Minecraft.</p>
-        <p>Contacto: marpe0715@gmail.com</p>
-    </footer>
+<footer>
+    <p>Desarrollado por Martin Pérez Torres</p>
+    <div class="social-links">
+        <a href="https://github.com/martinp07" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/martinp07" target="_blank">LinkedIn</a>
+    </div>
+</footer>
 
 </body>
 </html>
